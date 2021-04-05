@@ -482,8 +482,8 @@ p {
 }
 .mycards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2%;
   position: relative;
   margin-bottom: 30px;
 }
@@ -506,6 +506,118 @@ p {
 .absolute_container {
   position: relative;
 }
+.footer_content {
+  width: 100%;
+  display: flex;
+  height: 0px;
+  justify-content: center;
+}
+.footer_content ul {
+  bottom: 70px;
+}
+.footer_content p {
+  position: relative;
+  bottom: 45px;
+}
+@media (max-width: 991px) {
+  .absolute_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ceo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about .main_header {
+    padding: 0px 15px !important;
+  }
+  nav button {
+    margin-right: 15px;
+  }
+  .navbar-collapse {
+    border-top: 1px solid #cccccc;
+    padding-bottom: 30px;
+  }
+  .navbar-collapse li a.active {
+    border: 0px;
+    border-bottom: 1px solid #ecf4ff;
+  }
+  .navbar-collapse li a {
+    border: 0px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ecf4ff;
+    padding: 0px 15px !important;
+  }
+  .boxes,
+  .boxes1,
+  .boxes3,
+  .dots,
+  .dots2,
+  .dots3 {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0px 15px;
+  }
+  nav li:last-child a {
+    width: 150px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: #f3d221 !important;
+    /* margin-left: 15px; */
+  }
+  .navbar-collapse li {
+    padding: 0px;
+  }
+  .ceo_image {
+    margin-bottom: 40px;
+  }
+  .main_header .main_header_text,
+  .main_header .mian_header_image {
+    width: 100%;
+  }
+  .footer_content ul {
+    bottom: 35px !important;
+  }
+  .footer_content p {
+    position: relative !important;
+    bottom: 25px !important;
+  }
+  .container.main_header {
+    flex-direction: column-reverse;
+  }
+  .mycards{
+    grid-template-columns: 49% 49%;
+  }
+  .contact_form{
+    grid-template-columns: 1fr!important;
+  }
+  .absolute_container .courses img{
+    width: 80%;
+  }
+  .absolute_container.course_container img{
+    width: 100%;
+  }
+  .course_container p{
+    width: 100%!important;
+  }
+  .footer ul li a{
+    width: 18px!important;
+    height: 18px!important;
+  }
+  .footer ul li a i{
+    font-size: 10px;
+  }
+}
+@media(max-width: 768px){
+  .mycards{
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+  }
+}
 .absolute_container:first-child {
   border-top: 3px solid #fffdf2;
 }
@@ -525,7 +637,7 @@ p {
 .absolute_container .boxes1 {
   position: absolute;
   right: 0px;
-  top: 85px;
+  top: -111px;
   z-index: -1;
 }
 .absolute_container .boxes3 {
@@ -537,7 +649,7 @@ p {
 .absolute_container .dots2 {
   position: absolute;
   left: 0px;
-  top: 140px;
+  top: -41px;
   z-index: -1;
 }
 .absolute_container .dots3 {
@@ -565,9 +677,12 @@ p {
   line-height: 35px;
   width: 90%;
 }
+.home .absolute_container.first {
+  margin-bottom: 150px;
+}
 .absolute_container .courses {
   position: absolute;
-  bottom: -100px;
+  bottom: -65px;
   display: flex;
   align-items: center;
   justify-content: center;
