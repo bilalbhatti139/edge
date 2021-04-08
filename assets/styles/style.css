@@ -498,7 +498,6 @@ p {
   justify-content: center;
   flex-direction: column;
   padding: 30px 30px;
-  padding-bottom: 80px;
 }
 .course .absolute_container:nth-child(1) {
   margin-bottom: 220px;
@@ -589,31 +588,31 @@ p {
   .container.main_header {
     flex-direction: column-reverse;
   }
-  .mycards{
+  .mycards {
     grid-template-columns: 49% 49%;
   }
-  .contact_form{
-    grid-template-columns: 1fr!important;
+  .contact_form {
+    grid-template-columns: 1fr !important;
   }
-  .absolute_container .courses img{
+  .absolute_container .courses img {
     width: 80%;
   }
-  .absolute_container.course_container img{
+  .absolute_container.course_container img {
     width: 100%;
   }
-  .course_container p{
-    width: 100%!important;
+  .course_container p {
+    width: 100% !important;
   }
-  .footer ul li a{
-    width: 18px!important;
-    height: 18px!important;
+  .footer ul li a {
+    width: 18px !important;
+    height: 18px !important;
   }
-  .footer ul li a i{
+  .footer ul li a i {
     font-size: 10px;
   }
 }
-@media(max-width: 768px){
-  .mycards{
+@media (max-width: 768px) {
+  .mycards {
     grid-template-columns: 100%;
     grid-gap: 20px;
   }
@@ -677,16 +676,22 @@ p {
   line-height: 35px;
   width: 90%;
 }
-.home .absolute_container.first {
-  margin-bottom: 150px;
+
+a.learn-more {
+  background: #f3d221;
+  color: #121109 !important;
+  border: 0px;
+  font-weight: 500 !important;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 20px !important;
 }
+
 .absolute_container .courses {
-  position: absolute;
-  bottom: -65px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 50px 0px;
 }
 .absolute_container .courses a {
   color: #12110c;
