@@ -499,9 +499,7 @@ p {
   flex-direction: column;
   padding: 30px 30px;
 }
-.course .absolute_container:nth-child(1) {
-  margin-bottom: 220px;
-}
+
 .absolute_container {
   position: relative;
 }
